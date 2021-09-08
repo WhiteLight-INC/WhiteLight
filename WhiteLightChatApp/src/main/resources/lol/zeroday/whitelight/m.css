@@ -82,3 +82,37 @@
 .background-login{
     -fx-background-color: #161616;
 }
+
+.user-profile-panel{
+    -fx-background-color: #161616;
+}
+.line-disp{
+    -fx-background-color: #A36ED2;
+}
+
+.user-profile-tab{
+    -fx-background-color: #212121;
+}
+
+.add-user{
+    -fx-background-color: #191919;
+    -fx-text-fill: #64ff81;
+    -fx-border-color: #64ff81;
+}
+
+.block-user{
+    -fx-background-color: #191919;
+    -fx-text-fill: #ff4c4c;
+    -fx-border-color: #ff4c4c;
+}
+
+.message-user{
+    -fx-background-color: #191919;
+    -fx-text-fill: #ffdada;
+    -fx-border-color: #ffdada;
+}
+
+.about-me-fields{
+    -fx-background-color: #191919;
+    -fx-text-fill: #fff;
+}
