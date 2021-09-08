@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
+.background {
+    -fx-background-color: #121212;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: black;
+}
+
+.close-minize-buttons {
+    -fx-background-color: #121212;
+    -fx-text-fill: white;
+    -fx-font-family: 'Urbanist';
+}
+
+.close-minize-buttons:hover {
+    -fx-background-color: red;
+}
+
+.text-labels {
+    -fx-font-family: 'Urbanist';
+    -fx-text-fill: white;
+}
+
+.friendspanel{
+    -fx-background-color: #191919;
+}
+
+.msgbg{
+    -fx-background-color: #191919;
+}
+
+.chatpanel{
+    -fx-background-color: #191919;
+}
+
+.loginpage{
+    -fx-background-color: #121212;
+}
+
+.loginpanel{
+    -fx-background-color: #212121;
+}
+
+.close-min-login{
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+}
+
+.close-min-login2{
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+}
+
+.image-login{
+    -fx-border-radius: 50%;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: lightgrey;
+}
+
+.login-button{
+    -fx-background-color: #191919;
+    -fx-text-fill: white;
+}
+
+.register-button{
+    -fx-background-color: #191919;
+    -fx-text-fill: white;
+}
+
+.pass-field{
+    -fx-background-color: #191919;
+    -fx-text-fill: white;
+}
+
+.cred-field{
+    -fx-background-color: #191919;
+    -fx-text-fill: white;
+}
+
+.background-login{
+    -fx-background-color: #161616;
+}
