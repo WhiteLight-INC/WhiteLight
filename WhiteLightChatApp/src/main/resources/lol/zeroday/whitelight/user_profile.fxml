@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="663.0" stylesheets="m.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="508.0" prefWidth="663.0" styleClass="user-profile-panel" stylesheets="@m.css">
+         <children>
+            <Pane layoutX="-8.0" layoutY="173.0" prefHeight="3.0" prefWidth="671.0" styleClass="line-disp" stylesheets="@m.css" />
+            <Text fill="WHITE" layoutX="118.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     Birdlinux" wrappingWidth="194.13671875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="104.0" fitWidth="130.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@unknown.png" />
+               </image>
+            </ImageView>
+            <Text fill="#1da1f2" layoutX="130.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🐦" wrappingWidth="37.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#cd486b" layoutX="176.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="📷" wrappingWidth="31.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="221.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@github.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-16.0" prefHeight="31.0" prefWidth="679.0" styleClass="user-profile-tab">
+               <children>
+                  <Text fill="#d78af5" layoutX="22.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="🡠" wrappingWidth="47.13671875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="#d78af5" layoutX="130.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👑" wrappingWidth="37.13671875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="472.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" styleClass="add-user" stylesheets="@m.css" text="Add User" textFill="#64ff81">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="471.0" layoutY="90.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="185.0" styleClass="block-user" stylesheets="@m.css" text="Block User" textFill="#ff4c4c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="472.0" layoutY="134.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="185.0" styleClass="message-user" stylesheets="@m.css" text="Message User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="264.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="⋮" wrappingWidth="27.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <TextField alignment="TOP_LEFT" layoutX="20.0" layoutY="198.0" prefHeight="297.0" prefWidth="304.0" promptText="About me..." styleClass="about-me-fields" stylesheets="@m.css" />
+            <TextField layoutX="338.0" layoutY="300.0" prefHeight="35.0" prefWidth="304.0" promptText="17" styleClass="about-me-fields" stylesheets="@m.css">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="338.0" layoutY="352.0" prefHeight="35.0" prefWidth="304.0" promptText="Munich, Germany" styleClass="about-me-fields" stylesheets="@m.css" />
+            <TextField layoutX="338.0" layoutY="404.0" prefHeight="35.0" prefWidth="304.0" promptText="Student" styleClass="about-me-fields" stylesheets="@m.css" />
+            <TextField layoutX="338.0" layoutY="457.0" prefHeight="35.0" prefWidth="304.0" promptText="Hobbies" styleClass="about-me-fields" stylesheets="@m.css" />
+            <TextField layoutX="338.0" layoutY="198.0" prefHeight="35.0" prefWidth="304.0" promptText="George" styleClass="about-me-fields" stylesheets="@m.css">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="338.0" layoutY="247.0" prefHeight="35.0" prefWidth="304.0" promptText="Birdlinux" styleClass="about-me-fields" stylesheets="@m.css">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</Pane>
