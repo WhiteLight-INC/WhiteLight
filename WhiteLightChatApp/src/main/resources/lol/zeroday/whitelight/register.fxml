@@ -10,7 +10,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="282.0" styleClass="loginpage" stylesheets="@m.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleDrag" prefHeight="547.0" prefWidth="282.0" styleClass="loginpage" stylesheets="@m.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lol.zeroday.whitelight.RegisterController">
    <children>
       <Pane prefHeight="35.0" prefWidth="502.0" styleClass="loginpanel">
          <children>
@@ -22,9 +22,9 @@
                   <Color red="0.625" green="0.625" blue="0.625" fx:id="x42" />
                </textFill>
             </Label>
-            <Button layoutX="255.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="13.0" styleClass="close-min-login" text="X" textFill="TRANSPARENT" />
-            <Button layoutX="230.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleMinimize" prefHeight="26.0" prefWidth="23.0" styleClass="close-min-login2" text="-" />
-            <Label layoutX="53.0" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="30.0" prefWidth="179.0" styleClass="text-labels" text="𝗪𝗵𝗶𝘁𝗲𝗹𝗶𝗴𝗵𝘁 𝗜𝗡𝗖 - Register">
+            <Button fx:id="closeButton" layoutX="255.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="13.0" styleClass="close-min-login" text="X" textFill="TRANSPARENT" />
+            <Button fx:id="minimizeButton" layoutX="230.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleMinimize" prefHeight="26.0" prefWidth="23.0" styleClass="close-min-login2" text="-" />
+            <Label alignment="CENTER" layoutX="53.0" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="30.0" prefWidth="179.0" styleClass="text-labels" text="WL - Register">
                <font>
                   <Font size="15.0" fx:id="x321" />
                </font>
@@ -40,7 +40,7 @@
             <TextField layoutX="12.0" layoutY="311.0" prefHeight="30.0" prefWidth="259.0" promptText="Password" styleClass="pass-field" />
             <ImageView fitHeight="150.0" fitWidth="149.0" layoutX="66.0" layoutY="39.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../Downloads/unknown.png" />
+                  <Image url="@wl-round.png" />
                </image>
             </ImageView>
             <Button layoutX="12.0" layoutY="444.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="259.0" styleClass="register-button" text="Register" />

@@ -8,17 +8,20 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.base', 'javafx.web', 'javafx.fxml', 'javafx.graphics']
 }
 
+application.mainClassName = "lol.zeroday.whitelight.Main"
 
 group 'lol.zeroday.whitelight'
 version '1.0.0'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'com.github.Vatuu:discord-rpc:1.6.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
 }
 
 test {

@@ -1,0 +1,21 @@
+.background {
+    -fx-background-color: #1c1d26;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: black;
+}
+
+.close-minize-buttons {
+    -fx-background-color:  #1c1d26;
+    -fx-text-fill: white;
+    -fx-font-family: "Source Code Pro";
+}
+
+.close-minize-buttons:hover {
+    -fx-background-color: red;
+}
+
+.text-labels {
+    -fx-font-family: "Source Code Pro";
+    -fx-text-fill: white;
+}
