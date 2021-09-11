@@ -19,7 +19,7 @@
 
 .text-labels {
     -fx-font-family: 'Urbanist';
-    -fx-text-fill: white;
+    -fx-text-fill: #868686;
 }
 
 .friendspanel{
@@ -147,9 +147,13 @@
 }
 
 .profile-cus{
-    -fx-background-color: #191919
+    -fx-background-color: #191919;
 }
 
 .profile-soc{
-    -fx-background-color: #161616
+    -fx-background-color: #161616;
+}
+
+.button-bg{
+    -fx-background-color: transparent;
 }
