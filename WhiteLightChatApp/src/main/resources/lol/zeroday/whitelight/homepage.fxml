@@ -4,12 +4,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <VBox fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleDrag" prefHeight="600.0" prefWidth="900.0" styleClass="background" stylesheets="@m.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lol.zeroday.whitelight.HomepageController">
@@ -17,41 +18,42 @@
         <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
             <children>
                 <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
-                    <children>
-                        <Label layoutX="8.0" layoutY="4.0" maxWidth="-1.0" prefHeight="16.0" prefWidth="13.0" styleClass="text-labels" text="⚙">
-                            <font>
-                                <Font name="System Bold" size="15.0" fx:id="x5" />
-                            </font>
-                            <textFill>
-                                <Color red="0.625" green="0.625" blue="0.625" fx:id="x6" />
-                            </textFill></Label>
-                        <Button layoutX="868.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="13.0" styleClass="close-minize-buttons" text="X" />
-                        <Button layoutX="844.0" mnemonicParsing="false" onAction="#handleMinimize" prefHeight="26.0" prefWidth="23.0" styleClass="close-minize-buttons" text="-" />
-                        <Label layoutX="26.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="30.0" prefWidth="34.0" styleClass="text-labels" text=" 👤">
-                            <font>
-                                <Font size="15.0" fx:id="x3" />
-                            </font>
-                            <textFill>
-                                <Color red="0.625" green="0.625" blue="0.625" fx:id="x4" />
-                            </textFill>
-                        </Label>
-                        <Label alignment="CENTER" layoutX="409.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="30.0" prefWidth="144.0" styleClass="text-labels" text="WL">
-                            <font>
-                                <Font name="Verdana Bold" size="20.0" fx:id="x31" />
-                            </font>
-                            <textFill>
-                                <Color red="0.625" green="0.625" blue="0.625" fx:id="x41" />
-                            </textFill>
-                        </Label>
-                        <Label layoutX="51.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="30.0" prefWidth="34.0" styleClass="text-labels" text="  ?">
-                            <font>
-                                <Font size="15.0" fx:id="x32" />
-                            </font>
-                            <textFill>
-                                <Color red="0.625" green="0.625" blue="0.625" fx:id="x42" />
-                            </textFill>
-                        </Label>
-                    </children></Pane>
+               <children>
+                  <Button layoutX="868.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="13.0" styleClass="close-minize-buttons" text="X" />
+                  <Button layoutX="844.0" mnemonicParsing="false" onAction="#handleMinimize" prefHeight="26.0" prefWidth="23.0" styleClass="close-minize-buttons" text="-" />
+                  <Label layoutX="409.0" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="30.0" prefWidth="144.0" styleClass="text-labels" text="𝗪𝗵𝗶𝘁𝗲𝗹𝗶𝗴𝗵𝘁 𝗜𝗡𝗖" textFill="#868686">
+                     <font>
+                        <Font name="Verdana Bold" size="20.0" fx:id="x31" />
+                     </font>
+                  </Label>
+                  <Button layoutX="-6.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="button-bg">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/homepage-icons/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="29.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="button-bg">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/homepage-icons/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="60.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="button-bg">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/homepage-icons/quest.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></Pane>
             </children>
             <padding>
                 <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
@@ -60,79 +62,88 @@
         <SplitPane dividerPositions="0.3143176733780761" prefHeight="570.0" prefWidth="900.0" styleClass="background">
             <items>
                 <AnchorPane cache="true" minHeight="0.0" minWidth="0.0" prefHeight="562.0" prefWidth="318.0" style="-fx-background-color: #161616; -fx-border-color: #161616;">
-                    <children>
-                        <TilePane prefHeight="32.0" prefWidth="278.0" styleClass="friendspanel">
-                            <children>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="92.0" styleClass="text-labels" text="🌐" textFill="WHITE">
-                                    <font>
-                                        <Font name="Verdana Bold" size="20.0" fx:id="x3111" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="34.0" styleClass="text-labels" text="💬" textFill="WHITE">
-                                    <font>
-                                        <Font name="Verdana Bold" size="20.0" fx:id="x311" />
-                                    </font>
-                                </Label>
-                                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="34.0" styleClass="text-labels" text="👥" textFill="WHITE">
-                                    <font>
-                                        <Font name="Verdana Bold" size="20.0" fx:id="x31111" />
-                                    </font>
-                                </Label>
-                            </children>
-                        </TilePane>
-                    </children></AnchorPane>
+               <children>
+                  <TilePane prefHeight="32.0" prefWidth="278.0" styleClass="friendspanel">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="81.0" styleClass="button-bg" stylesheets="@m.css">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/homepage-icons/globe-2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="78.0" styleClass="button-bg">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="-fx-background-color: #161616">
+                                 <image>
+                                    <Image url="@assets/homepage-icons/msg.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="87.0" styleClass="button-bg">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/homepage-icons/friends.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </TilePane>
+               </children></AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="627.0">
-                    <children>
-                        <Pane layoutX="-1.0" layoutY="515.0" prefHeight="50.0" prefWidth="616.0" styleClass="msgbg">
-                            <children>
-                                <Label alignment="CENTER" layoutX="571.0" layoutY="8.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="34.0" styleClass="text-labels" text=" 😄 ">
-                                    <font>
-                                        <Font name="Verdana Bold" size="20.0" fx:id="x311111" />
-                                    </font>
-                                    <textFill>
-                                        <Color red="0.625" green="0.625" blue="0.625" fx:id="x411111" />
-                                    </textFill>
-                                </Label>
-                                <Label alignment="CENTER" layoutX="536.0" layoutY="8.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="34.0" styleClass="text-labels" text="🡺">
-                                    <font>
-                                        <Font name="Verdana Bold" size="20.0" fx:id="x3111111" />
-                                    </font>
-                                    <textFill>
-                                        <Color red="0.625" green="0.625" blue="0.625" fx:id="x4111111" />
-                                    </textFill>
-                                </Label>
-                                <Label alignment="CENTER" layoutX="7.0" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="34.0" styleClass="text-labels" text="📁">
-                                    <font>
-                                        <Font name="Verdana Bold" size="20.0" fx:id="x31111111" />
-                                    </font>
-                                    <textFill>
-                                        <Color red="0.625" green="0.625" blue="0.625" fx:id="x41111111" />
-                                    </textFill>
-                                </Label>
-                            </children>
-                        </Pane>
-                        <Pane layoutX="-4.0" layoutY="-6.0" prefHeight="39.0" prefWidth="624.0" styleClass="chatpanel">
-                            <children>
-                                <Label alignment="CENTER" layoutX="9.0" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="156.0" styleClass="text-labels" text="# - Channel Name">
-                                    <font>
-                                        <Font name="Verdana Bold" size="16.0" fx:id="x311112" />
-                                    </font>
-                                    <textFill>
-                                        <Color red="0.625" green="0.625" blue="0.625" fx:id="x411112" />
-                                    </textFill>
-                                </Label>
-                                <Label alignment="CENTER" layoutX="582.0" layoutY="-2.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="27.0" prefWidth="34.0" styleClass="text-labels" text="⋮">
-                                    <font>
-                                        <Font name="Verdana Bold" size="33.0" fx:id="x3111121" />
-                                    </font>
-                                    <textFill>
-                                        <Color red="0.625" green="0.625" blue="0.625" fx:id="x4111121" />
-                                    </textFill>
-                                </Label>
-                            </children>
-                        </Pane>
-                    </children>
-                </AnchorPane>
+               <children>
+                  <Pane layoutX="-1.0" layoutY="515.0" prefHeight="50.0" prefWidth="616.0" styleClass="msgbg">
+                     <children>
+                        <Button layoutX="4.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="button-bg">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/homepage-icons/upload.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="568.0" layoutY="8.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="button-bg">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/homepage-icons/emoji.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="527.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" styleClass="button-bg">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/homepage-icons/send.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-4.0" layoutY="-6.0" prefHeight="39.0" prefWidth="624.0" styleClass="chatpanel">
+                     <children>
+                        <Label alignment="CENTER" layoutX="9.0" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="32.0" prefWidth="156.0" styleClass="text-labels" text="# - Channel Name" textFill="#5b5b5b">
+                           <font>
+                              <Font name="Verdana Bold" size="16.0" fx:id="x311112" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="582.0" layoutY="-2.0" maxHeight="1.7976931348623157E308" maxWidth="-1.0" prefHeight="27.0" prefWidth="34.0" styleClass="text-labels1" text="⋮" textFill="#c6c6c6">
+                           <font>
+                              <Font name="Verdana Bold" size="33.0" fx:id="x3111121" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
             </items>
         </SplitPane>
     </children>
